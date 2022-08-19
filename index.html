@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schrodinger's Cat</title>
+    <style>
+        body{
+            background: #ececec;
+            width: 100%;
+            height: 100%;
+        }  
+        .stat{
+            font-size: 50px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #statState{
+            font-size: 45px;
+            font-family: monospace;
+        }
+        h2{
+            font-size: 75px;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        } 
+        img{
+            height: 500px;
+            position: absolute;
+            left: 500px;
+        }
+        button{
+            transition: all 0.5s ease;
+            height: 50px;
+            width: 100px;
+            border-radius: 10px;
+            background-color: #333333;
+            color: #FFF;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        button:hover{
+            box-shadow: none;
+            transition: all 0.5s ease;
+        }
+</style>
+</head>
+<body>
+    <label class="stat">State: <span id="statState">Clearly Alive</span></label>
+    <br>
+    <button onclick="box()">Box the cat</button>
+    <button onclick="state()">Check State</button>
+    <h2 id="txt">Meet Schrodinger's Cat</h2>
+    <img id="imgg" src="liftarn_Cat_silhouette.svg">
+    <script src="app.js"></script>
+</body>
+</html>
